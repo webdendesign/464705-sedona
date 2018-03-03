@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Габитов](https://up.htmlacademy.ru/htmlcss/20/user/464705).
-* Наставник: [Вадим Новаш](https://up.htmlacademy.ru/htmlcss/20/user/464705).
+* Наставник: [Вадим Новаш](https://up.htmlacademy.ru/htmlcss/20/user/8589).
 
 ---
 
