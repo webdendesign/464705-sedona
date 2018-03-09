@@ -21,22 +21,47 @@
       </header>
 
       <main class="main-catalog">
-        <form action="#" method="get">
-          <p>Инфраструктура:</p>
-          <ul class="comfort">
-            <li class="filter-hotel-item">Бассейн</li>
-            <li class="filter-hotel-item">Парковка</li>
-            <li class="filter-hotel-item">WI-FI</li>
-          </ul>
-          <p>Тип жилья:</p>
-          <ul class="type-house">
-            <li class="type-house-item">Гостиница</li>
-            <li class="type-house-item">Мотель</li>
-            <li class="type-house-item">Аппартаменты</li>
-          </ul>
-          <div>
+        <form class="option-form" action="#" method="post">
+          <fieldset class="visual-hidden">
+            <legend class="infrastructure">Инфраструктура:</legend>
+              <div class="comfort">
+                <p>
+                  <input id="pool" type="checkbox" name="pool" checked>
+                  <label for="pool" class="filter-hotel-item">Бассейн</label>
+                </p>
+                <p>
+                  <input id="parking" type="checkbox" name="parking">
+                  <label for="parking" class="filter-hotel-item">Парковка</label>
+                </p>
+                <p>
+                  <input id="wi-fi" type="checkbox" name="wi-fi">
+                  <label for="wi-fi" class="filter-hotel-item">WI-FI</label>
+                </p>
+              </div>
+          </fieldset>
+          <fieldset class="visual-hidden">
+            <legend class="type-of-house">Тип жилья:</legend>
+              <div class="type-house">
+                <p>
+                  <input id="hotel" type="checkbox" name="hotel" checked>
+                  <label for="hotel" class="type-house-item">Гостиница</label>
+                </p>
+                <p>
+                  <input id="motel" type="checkbox" name="motel" checked>
+                  <label for="motel" class="type-house-item">Мотель</label>
+                </p>
+                <p>
+                  <input id="appartment" type="checkbox" name="appartment" checked>
+                  <label for="appartment" class="type-house-item">Аппартаменты</label>
+                </p>
+              </div>
+          </fieldset>
+          <div class="price">
             <p>Стоимость в сутки(Р):</p>
-            <span>от 0 до 3000</span>
+            <label for="price-item">от 0 до 3000</label>
+            <input id="price-item" type="number"  min="0" max="1000" placeholder="от 0">
+            <input type="number" min="1000" max="3000" placeholder="до 3000">
+            <input type="range" min="0" max="3000" step="1">
             <button type="submit">Показать</button>
           </div>
         </form>
