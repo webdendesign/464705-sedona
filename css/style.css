@@ -32,16 +32,16 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover::not li:nth-child(4) ,
+.site-navigation a:focus::not li:nth-child(4) {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation a:active::not li:nth-child(4) {
   color: #b2b2b2;
 }
 
-.site-navigation-current {
+.site-navigation-current a {
   color: #766357;
 }
 
@@ -251,6 +251,7 @@ a {
 .form-group input:focus {
   border: 2px solid #e5e5e5;
   background-color: transparent;
+  border: none;
 }
 
 .step-down,
@@ -269,11 +270,15 @@ a {
   color: #81b3d2;
 }
 
-.see:hover {
+.search-motel-form a {
+  background-color: #81b3d2;
+}
+
+.search-motel-form a:hover {
   background-color: #669ec0;
 }
 
-.see:active {
+.search-motel-form a:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
