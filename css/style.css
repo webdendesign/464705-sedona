@@ -16,6 +16,153 @@ a {
   text-decoration: none;
 }
 
+/*------------------Cеточные стили-----------------*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+}
+
+
+.main-header-bg {
+  width: 1200px;
+  min-height: 773px;
+  background: url("../img/group-1.jpg") no-repeat top;
+}
+
+.filters-bg {
+  width: 1200px;
+  min-height: 562px;
+  background: url("../img/filter-background.jpg") no-repeat top;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features {
+  margin-top: -170px;
+  margin-bottom: 57px;
+}
+
+.features-header {
+  margin-bottom: 56px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-list li:nth-child(3),
+.features-list li:nth-child(4),
+.features-list li:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  display: flex;
+  margin-top: 164px;
+}
+
+.service li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  margin-bottom: 80px;
+}
+
+.open-form {
+  margin-top: 52px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.found {
+  display: flex;
+  align-items: baseline;
+}
+
+.sort {
+  display: flex;
+}
+
+.option-form {
+  display: flex;
+}
+
+fieldset {
+  border: none;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 600px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.more-detailed {
+  display: flex;
+}
+
+.rating {
+  margin-left: 700px;
+}
+
+
+/*-------------------конец-----------------*/
+
 .navigation {
   font-size: 14px;
   line-height: 26px;
@@ -45,6 +192,15 @@ a {
 .site-navigation-current a:hover,
 .site-navigation-current a:active {
   color: #766357;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
 }
 
 .main-catalog {
@@ -285,11 +441,12 @@ a {
   color: #88b6d1;
 }
 
+.main-footer p:first-child {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .main-footer ul {
   list-style: none;
 }
-
-.social {
-  text-align: center;
-}
-
