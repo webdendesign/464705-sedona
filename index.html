@@ -10,15 +10,13 @@
   <body>
     <div class="page-wrapper">
     	<header class="main-header main-header-bg">
+        <a class="logo">
+          <img src="img/logo.png" wight="138" height="70" alt="Логотип города Седона"><!--логотип-->
+        </a>
     		<nav class="navigation">
   	  		<ul class="site-navigation">
   	  			<li><a href="info.html">Информация</a></li>
   	  			<li><a href="photo.html">Фото и видео</a></li>
-            <li>
-              <a class="logo">
-                <img src="img/logo.png" wight="138" height="70" alt="Логотип города Седона"><!--логотип-->
-              </a>
-            </li>
   	  			<li><a href="map.html">Карта штата</a></li>
   	  			<li><a href="catalog.html">Гостиницы</a></li>
   	  		</ul>
@@ -88,7 +86,7 @@
     			<h2>Заинтересовались?</h2>
     			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинец в Седоне</p>
     			<button class="button open-form">Поиск гостиницы в Седоне</button>
-            <form class=" visually-hidden search-motel-form" action="catalog.html" method="post">
+            <form class="search-motel-form" action="catalog.html" method="post">
               <div class="form-group">
                 <label for="data-begin">Дата заезда:</label>
                 <input id="data-begin" type="text" name="come" placeholder="24 апреля 2017">
@@ -98,36 +96,37 @@
                 <input id="data-end" type="text" name="ride-out" placeholder="4 июля 2017">
               </div>
               <div class="form-group">
-                <label for="parent">Взрослые:</label>
-                <button class="button step-down">-</button>
-                <input id="parent" type="number" min="1" max="10" step="1" value="1">
-                <button class="button step-up">+</button>
-              </div>
-              <div class="form-group">
-                <label for="children">Дети:</label>
-                <button class="button step-down">-</button>
-                <input id="children" type="number" min="0" max="10" step="1" value="0">
-                <button class="button step-up">+</button>
+                <div>
+                  <label for="parent">Взрослые:</label>
+                  <button class="button step-down">-</button>
+                  <input id="parent" type="number" min="1" max="10" step="1" value="1">
+                  <button class="button step-up">+</button>
+                </div>
+                <div>
+                  <label for="children">Дети:</label>
+                  <button class="button step-down">-</button>
+                  <input id="children" type="number" min="0" max="10" step="1" value="0">
+                  <button class="button step-up">+</button>
+                </div>
               </div>
       			  <a class="button" href="catalog.html">Найти</a>
             </form>
     		</section>
 
-    		<section class="modal-map">
-    			<img src="img/map.jpg" width="1200" height="593" alt="Карта"> <!--карта-->
-    		</section>
     	</main>
 
-    	<footer class="main-footer">
-    		<p>#Visitsedona</p>
-    		<ul class="social">
-  		  	<li><a class="social-btn tw" href="#">Твиттер</a></li>
-  		  	<li><a class="social-btn fb" href="#">Фейсбук</a></li>
-  		  	<li><a class="social-btn ut" href="#">Ютьюб</a></li>
-  	  	</ul>
-    		<p class="copyright">
-    			<span>website by <a href="https://htmlacademy.ru" target="_blank">htmlacademy</a></span>
-    		</p>
+    	<footer class="main-footer modal-map">
+        <div class="footer-btm">
+      		<p>#Visitsedona</p>
+      		<ul class="social">
+    		  	<li><a class="social-btn tw" href="#">Твиттер</a></li>
+    		  	<li><a class="social-btn fb" href="#">Фейсбук</a></li>
+    		  	<li><a class="social-btn ut" href="#">Ютьюб</a></li>
+    	  	</ul>
+      		<p class="copyright">
+      			<span>website by <a href="https://htmlacademy.ru" target="_blank">htmlacademy</a></span>
+      		</p>
+        </div>
     	</footer>
     </div>
   </body>

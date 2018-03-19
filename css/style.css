@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -22,25 +22,38 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 .page-wrapper {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
+  background-color: #ffffff;
 }
 
+.main-header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 531px;
+}
 
 .main-header-bg {
   width: 1200px;
-  min-height: 773px;
+  min-height: 565px;
   background: url("../img/group-1.jpg") no-repeat top;
+  background-size: cover;
 }
 
 .filters-bg {
   width: 1200px;
-  min-height: 562px;
-  background: url("../img/filter-background.jpg") no-repeat top;
+  min-height: 216px;
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
 }
 
 .site-navigation {
@@ -49,12 +62,8 @@ body {
 }
 
 .features {
-  margin-top: -170px;
-  margin-bottom: 57px;
-}
 
-.features-header {
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .features-list {
@@ -81,6 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
 }
 
 .service {
@@ -88,7 +98,8 @@ body {
   padding: 0;
   width: 1200px;
   display: flex;
-  margin-top: 164px;
+  padding-top: 164px;
+  margin-bottom: 80px;
 }
 
 .service li {
@@ -96,17 +107,18 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 33%;
-  margin-bottom: 80px;
 }
 
 .open-form {
   margin-top: 52px;
 }
 
-.main-footer {
+.main-footer,
+.footer-btm {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 120px;
 }
 
 .social {
@@ -118,10 +130,14 @@ body {
 .found {
   display: flex;
   align-items: baseline;
+  justify-content: flex-start;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .sort {
   display: flex;
+  width: 230px;
+  justify-content: space-between;
 }
 
 .option-form {
@@ -129,6 +145,8 @@ body {
 }
 
 fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -148,16 +166,25 @@ fieldset {
 .catalog-item {
   width: 1200px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-bottom: 1px solid #f2f2f2;
 }
 
-.more-detailed {
+.item-info {
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .rating {
-  margin-left: 700px;
+  margin-left: 670px;
+}
+
+.rating p {
+  margin: 0;
 }
 
 
@@ -171,6 +198,8 @@ fieldset {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -209,6 +238,8 @@ fieldset {
 }
 
 .main-catalog ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -219,6 +250,7 @@ fieldset {
 }
 
 .price p {
+  margin: 0;
   font-weight: bold;
 }
 
@@ -226,7 +258,7 @@ fieldset {
   font: inherit;
   line-height: 21px;
   border: 1px solid #ffffff;
-  background-color: gray;
+  background-color: transparent;
 }
 
 .price .button:hover,
@@ -243,12 +275,18 @@ fieldset {
 
 .found p,
 .found a {
+  margin: 0;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sort-item:nth-child(1) a {
   color: #a3c7de;
+}
+
+.sort-item:nth-child(2) a,
+.sort-item:nth-child(3) a {
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-item a {
@@ -261,6 +299,11 @@ fieldset {
 
 .sort-item a:active {
   color: #000000;
+}
+
+.catalog-list li {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog h3 a {
@@ -277,7 +320,13 @@ fieldset {
   color: #b2b2b2;
 }
 
+.item-info h3 {
+  margin: 0;
+}
+
 .left-column a {
+  margin: ;
+  padding: ;
   font: inherit;
   font-weight: bold;
   background-color: #81b3d2;
@@ -308,6 +357,7 @@ fieldset {
 }
 
 .features-header p {
+  margin: 0;
   text-align: center;
 }
 
@@ -328,6 +378,10 @@ fieldset {
   text-align: center;
 }
 
+.feature-item p {
+  margin: 0;
+}
+
 .feature-item .features-item-info {
   width: 400px;
   height: 256px;
@@ -337,9 +391,15 @@ fieldset {
 
 .features-item-info p {
   font-weight: normal;
+  margin: 0;
+}
+
+.features-item-img img {
+  display: block;
 }
 
 .feature-item h2 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
 }
@@ -349,6 +409,7 @@ fieldset {
 }
 
 .service p {
+  margin: 0;
   font-size: 21px;
   font-weight: bold;
 }
@@ -364,7 +425,12 @@ fieldset {
 }
 
 .interested h2 {
+  margin: 0;
   font-size: 32px;
+}
+
+.interested p {
+  margin: 0;
 }
 
 .button {
@@ -379,7 +445,9 @@ fieldset {
 }
 
 .open-form {
-  width: 568px;
+  margin: 0;
+  padding: 0;
+  width: 570px;
   height: 86px;
   background-color: #766357;
 }
@@ -394,12 +462,33 @@ fieldset {
   color: #857871;
 }
 
+.search-motel-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 568px;
+  height: 395px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  margin-left: 315px;
+}
+
+.search-motel-form .form-group:nth-child(3) {
+  display: flex;
+}
+
 .form-group input {
   font: inherit;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+}
+
+.search-motel-form div:nth-child(1) input,
+.search-motel-form div:nth-child(2) input {
+
+  padding: ;
 }
 
 .form-group input:hover {
@@ -414,6 +503,7 @@ fieldset {
 
 .step-down,
 .step-up {
+  padding: 0;
   color: #a9a9a9;
   background-color: #f2f2f2;
 }
@@ -442,11 +532,34 @@ fieldset {
 }
 
 .main-footer p:first-child {
+  margin: 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
 .main-footer ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+.modal-map {
+  position: relative;
+  width: 1200px;
+  min-height: 593px;
+  background: url("../img/map.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.footer-btm {
+  position: absolute;
+  width: 1200px;
+  height: 120px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
