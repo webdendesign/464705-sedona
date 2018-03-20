@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-    	<header class="main-header main-header-bg">
+    	<header class="main-header">
         <a class="logo">
           <img src="img/logo.png" wight="138" height="70" alt="Логотип города Седона"><!--логотип-->
         </a>
@@ -25,7 +25,9 @@
 
     	<main class="main-content">
         <h1 class="visually-hidden">Седона - для путешествий!</h1>
-
+        <section class="promo">
+          <h1 class="visually-hidden">Welcome to Sedona</h1>
+        </section>
     		<section class="features">
           <header class="features-header">
             <p>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
@@ -86,7 +88,7 @@
     			<h2>Заинтересовались?</h2>
     			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинец в Седоне</p>
     			<button class="button open-form">Поиск гостиницы в Седоне</button>
-            <form class="search-motel-form" action="catalog.html" method="post">
+            <form class="search-motel-form" action="http://echo.htmlacademy.ru" method="post">
               <div class="form-group">
                 <label for="data-begin">Дата заезда:</label>
                 <input id="data-begin" type="text" name="come" placeholder="24 апреля 2017">
@@ -96,37 +98,37 @@
                 <input id="data-end" type="text" name="ride-out" placeholder="4 июля 2017">
               </div>
               <div class="form-group">
-                <div>
+                <div class="form-group-item">
                   <label for="parent">Взрослые:</label>
                   <button class="button step-down">-</button>
                   <input id="parent" type="number" min="1" max="10" step="1" value="1">
                   <button class="button step-up">+</button>
                 </div>
-                <div>
+                <div class="form-group-item">
                   <label for="children">Дети:</label>
                   <button class="button step-down">-</button>
                   <input id="children" type="number" min="0" max="10" step="1" value="0">
                   <button class="button step-up">+</button>
                 </div>
               </div>
-      			  <a class="button" href="catalog.html">Найти</a>
+      			  <button type="submit" class="button">Найти</a>
             </form>
     		</section>
-
+        <section class="modal-map">
+         <img src="img/map.jpg" width="1200" height="593" alt="Карта"> <!--карта-->
+        </section>
     	</main>
 
-    	<footer class="main-footer modal-map">
-        <div class="footer-btm">
-      		<p>#Visitsedona</p>
-      		<ul class="social">
-    		  	<li><a class="social-btn tw" href="#">Твиттер</a></li>
-    		  	<li><a class="social-btn fb" href="#">Фейсбук</a></li>
-    		  	<li><a class="social-btn ut" href="#">Ютьюб</a></li>
-    	  	</ul>
-      		<p class="copyright">
-      			<span>website by <a href="https://htmlacademy.ru" target="_blank">htmlacademy</a></span>
-      		</p>
-        </div>
+    	<footer class="main-footer footer-margin">
+      	<p class="hashteg">#Visitsedona</p>
+      	<ul class="social">
+    		  <li><a class="social-btn tw" href="#">Твиттер</a></li>
+    		  <li><a class="social-btn fb" href="#">Фейсбук</a></li>
+    		  <li><a class="social-btn ut" href="#">Ютьюб</a></li>
+    	  </ul>
+      	<p class="copyright">
+      		<span>website by <a href="https://htmlacademy.ru" target="_blank">htmlacademy</a></span>
+      	</p>
     	</footer>
     </div>
   </body>
