@@ -83,8 +83,8 @@
     		<section class="interested">
     			<h2>Заинтересовались?</h2>
     			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинец в Седоне</p>
-    			<button class="button open-form">Поиск гостиницы в Седоне</button>
-          <div class="modal">
+    			<button class="button open-form open-form-search">Поиск гостиницы в Седоне</button>
+          <div class="modal modal-search">
             <form class="search-motel-form" action="http://echo.htmlacademy.ru" method="post">
               <div class="form-group">
                 <div class="form-group-item">
@@ -107,7 +107,7 @@
                   <label class="adults" for="parent-item">Взрослые:</label>
                   <p class="step-parent">
                     <button class="button step-down"><span class="visually-hidden">Уменьшить</span></button>
-                    <input id="parent-item" type="number" min="1" max="10" step="1" value="2">
+                    <input id="parent-item" type="number" min="1" max="10" step="1" name="number-one">
                     <button class="button step-up"><span class="visually-hidden">Увеличить</span></button>
                   </p>
                 </p>
@@ -115,7 +115,7 @@
                   <label class="kid" for="children-item">Дети:</label>
                   <p class="step-children">
                     <button class="button step-down"><span class="visually-hidden">Уменьшить</span></button>
-                    <input id="children-item" type="number" min="0" max="10" step="1" value="0">
+                    <input id="children-item" type="number" min="0" max="10" step="1" name="number-two">
                     <button class="button step-up">><span class="visually-hidden">Увеличить</span></button>
                   </p>
                 </p>
@@ -124,8 +124,9 @@
             </form>
           </div>
     		</section>
-        <section class="modal-map">
-         <img src="img/map.jpg" width="1200" height="593" alt="Карта"> <!--карта-->
+        <section class="map modal-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785920.059432777!2d-112.18285995686945!3d34.80288204569004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522259529726" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+         <img src="img/map.jpg" width="1200" height="593" alt="Как добраться до Седоны">
         </section>
     	</main>
 
@@ -146,5 +147,32 @@
       	</p>
     	</footer>
     </div>
+
+    <script type="text/javascript">
+      var search = document.querySelector(".open-form-search");
+
+      var popup = document.querySelector(".modal-search");
+
+      var form = popup.querySelector("form");
+      var arrival_date = popup.querySelector("[name=come]");
+      var departure_date = popup.querySelector("[name=ride-out]");
+      var parent = popup.querySelector("[name=number-one]");
+      var children = popup.querySelector("[name=number-two]");
+
+
+      search.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.toggle("modal-show");
+        arrival_date.focus();
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!arrival_date.value || !departure_date.value || !parent.value || !children.value) {
+          evt.preventDefault();
+          console.log("Нужно ввести даты приезда и отъезда и количество отдыхающих");
+        }
+      });
+
+    </script>
   </body>
 </html>
