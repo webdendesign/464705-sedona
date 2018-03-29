@@ -216,8 +216,8 @@ fieldset {
 }
 
 .filter-range {
-  width: 330px;
-  margin-left: 120px;
+  width: 318px;
+  margin-left: 132px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -233,7 +233,7 @@ fieldset {
   position: relative;
 
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-size: 0;
 
@@ -267,7 +267,7 @@ fieldset {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 62px;
 }
 
 .price-controls input {
@@ -284,7 +284,7 @@ fieldset {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -582,7 +582,7 @@ fieldset {
 }
 
 .features {
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .features-header p {
@@ -626,11 +626,18 @@ fieldset {
   background-color: #81b3d2;
 }
 
-.features-item-info h2 {
+.features-list .feature-item:nth-child(1) h2 {
+  margin: 0;
+  margin-top: 48px;
+  margin-bottom: 22px;
+  line-height: 21px;
+}
+
+.features-list .feature-item:nth-child(2) h2 {
   margin: 0;
   margin-top: 44px;
   margin-bottom: 22px;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 .features-item-info p {
@@ -670,7 +677,7 @@ fieldset {
 .feature-item-three h2,
 .feature-item-four h2,
 .feature-item-five h2 {
-  margin-top: 43px;
+  margin-top: 44px;
   line-height: 23px;
   margin-bottom: 21px;
 }
@@ -681,7 +688,7 @@ fieldset {
   margin: 0;
   margin-top: 18px;
   margin-bottom: 58px;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 .features-list .gray-bg {
@@ -756,14 +763,14 @@ fieldset {
 .interested h2 {
   margin: 0;
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   letter-spacing: -1px;
 }
 
 .interested p {
   margin: 0;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
 }
 
 .button {
@@ -783,7 +790,7 @@ fieldset {
   width: 568px;
   height: 86px;
   background-color: #766357;
-  margin-top: 52px;
+  margin-top: 47px;
 }
 
 .open-form:hover,
@@ -836,9 +843,11 @@ fieldset {
 .form-group input[type="text"] {
   box-sizing: border-box;
   width: 346px;
+
   padding: 8px;
   padding-right: 60px;
-  margin-bottom: 29px;
+  padding-left: 14px;
+  margin-bottom: 26px;
 }
 
 .form-group input:focus {
@@ -874,7 +883,7 @@ fieldset {
 }
 
 .form-group:nth-child(2) label {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .form-group:nth-child(3) {
@@ -895,7 +904,7 @@ fieldset {
 .step-parent,
 .step-children {
   position: relative;
-  width: 120px;
+  width: 114px;
 }
 
 .step-down {
@@ -914,8 +923,8 @@ fieldset {
 .step-down::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 13px;
+  top: 19px;
+  left: 14px;
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;
@@ -959,8 +968,8 @@ fieldset {
 .step-up::after {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 13px;
+  top: 19px;
+  left: 14px;
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;
@@ -993,14 +1002,14 @@ fieldset {
 }
 
 .adults {
-  margin-top: 7px;
-  margin-right: 35px;
+  margin-top: 10px;
+  margin-right: 40px;
 }
 
 .kid {
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: 50px;
-  margin-right: 20px;
+  margin-right: 24px;
 }
 
 .form-group input:hover {
@@ -1024,9 +1033,9 @@ fieldset {
   width: 458px;
   padding: 0;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   background-color: #81b3d2;
-  margin-top: 50px;
+  margin-top: 56px;
 }
 
 .search-motel-form .button-search:hover {
@@ -1082,11 +1091,11 @@ fieldset {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 ;
-  margin-left: 255px;
-  margin-right: 230px;
+  margin-left: 257px;
+  margin-right: 228px;
   padding: 0;
 
-  width: 150px;
+  width: 154px;
   list-style: none;
 }
 
