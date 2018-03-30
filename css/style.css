@@ -898,7 +898,7 @@ fieldset {
 }
 
 .children {
-  margin-left: 60px;
+  margin-left:;
 }
 
 .step-parent,
@@ -1002,14 +1002,14 @@ fieldset {
 }
 
 .adults {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 40px;
 }
 
 .kid {
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: 50px;
-  margin-right: 24px;
+  margin-right: 27px;
 }
 
 .form-group input:hover {
@@ -1051,7 +1051,9 @@ fieldset {
   position: absolute;
   z-index: 2;
 
-  border: none;
+  border: 0;
+  width: 1200px;
+  height: 593px;
 }
 
 .modal-map {
