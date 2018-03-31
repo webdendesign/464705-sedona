@@ -836,12 +836,17 @@ fieldset {
 
 .button {
   font-size: 21px;
-  font-weight: bold;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+}
+
+.open-form-search {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 26px;
 }
 
 .open-form {
