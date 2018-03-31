@@ -357,7 +357,7 @@ fieldset {
   margin: 0;
   margin-right: 48px;
   font-size: 21px;
-  line-height: 26px
+
   font-weight: bold;
 }
 
@@ -1049,7 +1049,7 @@ fieldset {
   position: absolute;
   z-index: 2;
 
-  border: 0;
+  border: none;
   width: 1200px;
   height: 593px;
 }
