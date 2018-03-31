@@ -619,7 +619,7 @@ fieldset {
 
 .features-item-info {
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -647,7 +647,6 @@ fieldset {
 
 .features-item-img-one {
   width: 800px;
-  height: 256px;
   background-image: url("../img/features1.jpg");
   background-position: 0 -78px;
   background-repeat: no-repeat;
@@ -656,7 +655,6 @@ fieldset {
 
 .features-item-img-two {
   width: 800px;
-  height: 256px;
   background-image: url("../img/features2.jpg");
   background-position: 0 -78px;
   background-repeat: no-repeat;
