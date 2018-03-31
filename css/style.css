@@ -156,63 +156,61 @@ fieldset {
 .appartment-checkbox {
   position: relative;
   padding-left: 40px;
-  cursor: pointer;
 }
 
-.pool-checkbox input[type="checkbox"] + .filter-input-checkbox,
-.parking-checkbox input[type="checkbox"] + .filter-input-checkbox,
-.internet-checkbox input[type="checkbox"] + .filter-input-checkbox,
-.hotel-checkbox input[type="checkbox"] + .filter-input-checkbox,
-.motel-checkbox input[type="checkbox"] + .filter-input-checkbox,
-.appartment-checkbox input[type="checkbox"] + .filter-input-checkbox {
+
+.option-form input[type="checkbox"] + .filter-input-checkbox::before {
   position: absolute;
   top: 0;
   left: 0;
   content: "";
-  width: 23px;
+  width: 24px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
-.pool-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before,
-.parking-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before,
-.internet-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before,
-.hotel-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before,
-.motel-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before,
-.appartment-checkbox input[type="checkbox"]:checked + .filter-input-checkbox::before {
+.option-form input[type="checkbox"]:checked + .filter-input-checkbox::before {
+  display: none;
+}
+
+
+.option-form input[type="checkbox"] + .filter-input-checkbox::after {
+  display: none;
   position: absolute;
+  top: 0;
+  left: 0;
   content: "";
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
 }
 
-.pool-checkbox input[type="checkbox"]:disabled + .filter-input,
-.parking-checkbox input[type="checkbox"]:disabled + .filter-input,
-.internet-checkbox input[type="checkbox"]:disabled + .filter-input,
-.hotel-checkbox input[type="checkbox"]:disabled + .filter-input,
-.motel-checkbox input[type="checkbox"]:disabled + .filter-input,
-.appartment-checkbox input[type="checkbox"]:disabled + .filter-input {
+.option-form input[type="checkbox"]:checked + .filter-input-checkbox::after {
+  display: block;
+}
+
+.option-form input[type="checkbox"]:disabled + .filter-input-checkbox::before {
   position: absolute;
   top: 0;
   left: 0;
   content: "";
-  width: 23px;
+  width: 24px;
   height: 23px;
   background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
 }
 
-.pool-checkbox input[type="checkbox"]:disabled + .filter-input::before,
-.parking-checkbox input[type="checkbox"]:disabled + .filter-input::before,
-.internet-checkbox input[type="checkbox"]:disabled + .filter-input::before,
-.hotel-checkbox input[type="checkbox"]:disabled + .filter-input::before,
-.motel-checkbox input[type="checkbox"]:disabled + .filter-input::before,
-.appartment-checkbox input[type="checkbox"]:disabled + .filter-input::before  {
+.option-form input[type="checkbox"]:checked:disabled + .filter-input-checkbox::after  {
   position: absolute;
+  top: 0;
+  left: 0;
   content: "";
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
 }
 
 .filter-range {
@@ -699,8 +697,7 @@ fieldset {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 1200px;
-  margin-bottom: 84px;
+  margin-bottom: 82px;
   list-style: none;
 }
 
@@ -808,12 +805,8 @@ fieldset {
   z-index: 4;
 }
 
-.modal-search {
-  display: none;
-}
-
 .modal-show {
-  display: block;
+  display: none;
 }
 
 .search-motel-form {
@@ -843,15 +836,14 @@ fieldset {
 .form-group input[type="text"] {
   box-sizing: border-box;
   width: 346px;
-
-  padding: 8px;
+  height: 38px;
   padding-right: 60px;
   padding-left: 14px;
   margin-bottom: 26px;
 }
 
 .form-group input:focus {
-  outline: 2px solid #ebebeb;
+  box-shadow: inset 0 0 0 2px #ebebeb;
   background-color: #ffffff;
 }
 
@@ -859,9 +851,21 @@ fieldset {
   position: relative;
 }
 
+.form-group-item button {
+  border: none;
+  background-color: transparent;
+}
+
+.form-group-item button:hover,
+.form-group-item button:focus,
+.form-group-item button:active {
+  border: none;
+  outline: none;
+}
+
 .calendar-icon {
   position: absolute;
-  top: 8px;
+  top: 6px;
   right: 10px;
   background-repeat: no-repeat;
 }
@@ -876,6 +880,7 @@ fieldset {
 
 .calendar-icon:active path {
   fill: #81b3d2;
+  border: none;
 }
 
 .form-group:nth-child(1) label {
@@ -895,10 +900,6 @@ fieldset {
 .children {
   display: flex;
   justify-content: space-between;
-}
-
-.children {
-  margin-left:;
 }
 
 .step-parent,
@@ -923,8 +924,8 @@ fieldset {
 .step-down::before {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 14px;
+  top: 17px;
+  left: 13px;
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;
@@ -950,7 +951,6 @@ fieldset {
   background-color: #81b3d2;
 }
 
-
 .step-up {
   position: absolute;
   top: 0;
@@ -968,8 +968,8 @@ fieldset {
 .step-up::after {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 14px;
+  top: 17px;
+  left: 13px;
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;

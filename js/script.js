@@ -1,7 +1,7 @@
 
       var search = document.querySelector(".open-form-search");
 
-      var popup = document.querySelector(".modal-search");
+      var popup = document.querySelector(".modal");
 
       var form = popup.querySelector("form");
       var arrival_date = popup.querySelector("[name=come]");
@@ -9,6 +9,7 @@
       var parent = popup.querySelector("[name=number-one]");
       var children = popup.querySelector("[name=number-two]");
 
+      popup.classList.add("modal-show");
 
       search.addEventListener("click", function (evt) {
         evt.preventDefault();
